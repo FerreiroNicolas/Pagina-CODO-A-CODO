@@ -1,4 +1,4 @@
-@import url(producto-slider.css);
+@import url(/CSS/2-producto-slider.css);
 
 .tarjetas{
     display: flex;
@@ -19,7 +19,7 @@
     background-image: linear-gradient(
         rgba(0,0,0,0.2),
         rgba(0,0,0,0.2)
-    ),url(assets/img/Servicios/abstract-geometric-square-grey-with-line-on-white-background-technology-concept-free-vector.jpg);
+    ),url(/assets/img/Servicios/abstract-geometric-square-grey-with-line-on-white-background-technology-concept-free-vector.jpg);
     background-size: cover;
     border-radius: 10px;
     box-shadow: 0 0 30px -5px rgba(0, 0, 0, 0.6);
@@ -81,7 +81,7 @@
         rgba(0,0,0,0.5),
         rgba(0,0,0,0.9)
     )
-    ,url(assets/img/1920x1080_px_abstract_art_Colorful_colors_design_illustration_light-1488327.jpg!d);
+    ,url(/assets/img/Servicios/fondo-blanco-lineas-puntos-que-dicen-conectado_890721-168.avif);
     background-size: cover;
 
 }
@@ -144,7 +144,7 @@
         rgba(0, 0, 0, 0.95),
         rgba(0, 0, 0, 0.7)
     )
-    ,url(assets/img/Servicios/fondo-blanco-lineas-puntos-que-dicen-conectado_890721-168.avif);
+    ,url(/assets/img/Servicios/fondo-blanco-lineas-puntos-que-dicen-conectado_890721-168.avif);
     background-size: cover;
 }
 
@@ -260,7 +260,7 @@
         rgba(0,0,0,0.2),
         rgba(0,0,0,0.8)
     )
-    ,url(assets/img/Servicios/Estrategias2.png);
+    ,url(/assets/img/Servicios/Estrategias2.png);
     background-size: cover;
 
 }
@@ -309,7 +309,7 @@
         rgba(0,0,0,0.1),
         rgba(0,0,0,0.8)
     )
-    ,url(assets/img/Servicios/Seo2.jpg);
+    ,url(/assets/img/Servicios/Seo2.jpg);
     background-size: cover;
 }
 
@@ -357,7 +357,7 @@
         rgba(0,0,0,0.1),
         rgba(0,0,0,0.8)
     )
-    ,url(assets/img/Servicios/Adwords2.jpg);
+    ,url(/assets/img/Servicios/Adwords2.jpg);
     background-size: cover;
 }
 /*CARTA CUATRO*/
@@ -404,7 +404,7 @@
         rgba(0,0,0,0.1),
         rgba(0,0,0,0.8)
     )
-    ,url(assets/img/Servicios/Audiovisual2.png);
+    ,url(/assets/img/Servicios/Audiovisual2.png);
     background-size: cover;
 }
 /*CARTA CINCO*/
@@ -451,7 +451,7 @@
         rgba(0,0,0,0.1),
         rgba(0,0,0,0.8)
     )
-    ,url(assets/img/Servicios/Diseno\ grafico2.png);
+    ,url(/assets/img/Servicios/Diseno\ grafico2.png);
     background-size: cover;
 }
 /*CARTA SEIS*/
@@ -498,7 +498,7 @@
         rgba(0,0,0,0.1),
         rgba(0,0,0,0.8)
     )
-    ,url(assets/img/Servicios/desarrollo-web2.png);
+    ,url(/assets/img/Servicios/desarrollo-web2.png);
     background-size: cover;
 }
 
