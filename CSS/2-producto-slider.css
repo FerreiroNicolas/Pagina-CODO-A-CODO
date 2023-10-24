@@ -57,7 +57,7 @@
 }
 
 .parrafo ul{
-    list-style-image: url(assets/img/Producto/2.svg);
+    list-style-image: url(/assets/img/Producto/2.svg);
 }
 
 .contenedor-principal{
@@ -66,7 +66,7 @@
         rgba(0,0,0,0.3),
         rgba(0,0,0,0.6)
     ) 
-    ,url(assets/img/Slider/technology-white-background-geometric-technology-wallpaper-free-vector.jpg);
+    ,url(/assets/img/Slider/technology-white-background-geometric-technology-wallpaper-free-vector.jpg);
     background-size: inherit;
     margin-top: 90px;
 }
