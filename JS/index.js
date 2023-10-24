@@ -6,6 +6,10 @@ const { createApp} = Vue;
 
 // GUARDO EL ID EN UNA VARIABLE
 const mainId = "#form";
+
+// GENERO LA APP A MONTAR
 const mainApp = createApp(mainCore);
 
+// MONTADO DE LA APP
 mainApp.mount(mainId);
+

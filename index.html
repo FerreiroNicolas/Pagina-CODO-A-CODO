@@ -265,7 +265,7 @@
             <section id="consultas"  class="espaciado">  
             </section>
 
-            <section class="formulario" id="form">
+            <section class="formulario" id="form" v-show="form != null">
                 <div class="content-form">
 
                     <h1 class="brand">Contacta con <span>nosotros</span></h1>
@@ -277,26 +277,27 @@
                             <form action="">
                                 <p>
                                     <label for="fullname">Nombre completo</label>
-                                    <input type="text" name="fullname" id="fullname">
+                                    <input type="text" name="fullname" id="fullname" placeholder="Ingrese su nombre">
+                                    
                                 </p>
                                 <p>
                                     <label>Correo electrónico</label>
-                                    <input type="email" name="email">
+                                    <input type="email" name="email" placeholder="Ingrese su correo electrónico">
                                 </p>
                                 <p>
                                     <label>Teléfono</label>
-                                    <input type="tel" name="phone">
+                                    <input type="tel" name="phone" placeholder="Ingrese su número telefonico">
                                 </p>
                                 <p>
                                     <label>Localidad</label>
-                                    <input type="text" name="affair">
+                                    <input type="text" name="affair" placeholder="Ingrese su localidad">
                                 </p>
                                 <p class="block">
                                     <label>Mensaje</label>
-                                    <textarea name="message" id="" rows="3"></textarea>
+                                    <textarea name="message" id="" rows="3" placeholder="Ingrese mensaje con su consulta"></textarea>
                                 </p>
                                 <p class="block">
-                                    <button type="submit">
+                                    <button type="submit" @click="subirFormularioHandler($event)">
                                         Enviar
                                     </button>
                                 </p>
