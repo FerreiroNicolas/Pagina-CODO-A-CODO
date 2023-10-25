@@ -121,7 +121,13 @@ ul {
 }
 
 .contact-info ul li{
-    padding: 0.3em;
+
+    padding: 0.3em 0em;
+
+}
+
+.contact-info .formulario-parrafo{
+    text-align: justify;
 }
 
 /* LARGE SIZE */

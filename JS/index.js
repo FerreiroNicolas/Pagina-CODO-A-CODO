@@ -21,7 +21,7 @@ async function handleSubmit(event) {
             alert('Gracias por contactarnos, te escribiremos pronto');
         } else {
 
-        }
+    }
     } catch (error) {
         console.error(error);
     }
