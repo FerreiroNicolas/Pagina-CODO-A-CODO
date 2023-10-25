@@ -1,15 +1,31 @@
-import * as Vue from 'https://unpkg.com/vue@3/dist/vue.esm-browser.js'
-import {mainCore} from "./mainCore.Vue.js";
+const $form = document.querySelector('#form1');
 
-// TOMO EL MODULO A TRABAJAR Y CREAR LA APP
-const { createApp} = Vue; 
+$form.addEventListener('submit', handleSubmit);
 
-// GUARDO EL ID EN UNA VARIABLE
-const mainId = "#form";
+async function handleSubmit(event) {
+    event.preventDefault();
 
-// GENERO LA APP A MONTAR
-const mainApp = createApp(mainCore);
+    // Ensure that you are passing the correct HTML form element to FormData.
+    const form = new FormData($form); // Change 'this' to '$form'.
 
-// MONTADO DE LA APP
-mainApp.mount(mainId);
+    try {
+        const response = await fetch($form.action, { // Change 'this.action' to '$form.action'.
+            method: $form.method, // Change 'this.method' to '$form.method'.
+            body: form,
+            headers: {
+                'Accept': 'application/json'
+            }
+        });
+
+        if (response.ok) {
+            $form.reset(); // Change 'this.reset()' to '$form.reset()'.
+            alert('Gracias por contactarnos, te escribiremos pronto');
+        } else {
+            // Handle the case when the response is not OK (e.g., error handling).
+        }
+    } catch (error) {
+        // Handle errors that may occur during the fetch operation.
+        console.error(error);
+    }
+}
 
