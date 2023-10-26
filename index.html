@@ -28,10 +28,10 @@
                         <li><a href="#servicios" class="enlaces-menu">Servicios</a></li>
                         <li><a href="#consultas" class="enlaces-menu">Contacto</a></li>
                         
-                        <li><a href="#" class="redes-menu"><i class="social__icon fa-brands fa-youtube"></i></a></li>
-                        <li><a href="#" class="redes-menu"><i class="social__icon fa-brands fa-linkedin"></i></a></li>
-                        <li><a href="#" class="redes-menu"><i class="social__icon fa-brands fa-instagram"></i></a></li>
-                        <li><a href="#" class="redes-menu"><i class="social__icon fa-brands fa-facebook"></i></a></li>
+                        <li><a href="https://www.youtube.com/channel/UCVrn4_qerPoYYTdeYkg2AsQ" class="redes-menu"><i class="social__icon fa-brands fa-youtube"></i></a></li>
+                        <li><a href="https://www.linkedin.com/in/nicolás-ferreiro-b3703a293/" class="redes-menu"><i class="social__icon fa-brands fa-linkedin"></i></a></li>
+                        <li><a href="https://www.instagram.com/nicoferreiro1/" class="redes-menu"><i class="social__icon fa-brands fa-instagram"></i></a></li>
+                        <li><a href="https://www.facebook.com/nicolas.ferreiro.79/" class="redes-menu"><i class="social__icon fa-brands fa-facebook"></i></a></li>
                     </ul>
                 </nav>
             </div>
@@ -108,9 +108,7 @@
 
                 </div>
             </section>
-       
-
-
+        
             <section class="tarjetas">
                 <div class="contanador container">
                     <div class="card">
@@ -125,7 +123,7 @@
                                 Nuestras acciones serán
                                 siempre pensadas y orientadas a los objetivos de
                                 nuestros clientes.</p>
-                                <a href="#consultas">+ INFO</a>
+                                <a href="#indicador">+ INFO</a>
                                 
                             </div>
                         </div>
@@ -143,7 +141,7 @@
                                     de redactores: creación de
                                     contenido y de
                                     campañas publicitarias.</p>
-                                <a href="#consultas">+ INFO</a>
+                                <a href="#indicador">+ INFO</a>
                             </div>
                         </div>
                     </div>
@@ -159,7 +157,7 @@
                                     publicitarias: nuestro principal objetivo
                                     es maximizar la inversión de nuestros
                                     clientes.</p>
-                                <a href="#consultas">+ INFO</a>
+                                <a href="#indicador">+ INFO</a>
                             </div>
                         </div>
                     </div>
@@ -175,7 +173,7 @@
                                     potenciamos todo lo
                                     necesario para convencer a 
                                     la mayor cantidad de clientes.</p>
-                                <a href="#consultas">+ INFO</a>
+                                <a href="#indicador">+ INFO</a>
                             </div>
                         </div>
                     </div>
@@ -192,7 +190,7 @@
                                     redes sociales, e-books, y lo que se necesite
                                     llevar adelante de la mano del
                                     diseño.</p>
-                                <a href="#consultas">+ INFO</a>
+                                <a href="#indicador">+ INFO</a>
                             </div>
                         </div>
                     </div>
@@ -208,7 +206,7 @@
                                     funcionalidad, siempre pensando en la
                                     operatividad y la experiencia de
                                     usuario.</p>
-                                <a href="#consultas">+ INFO</a>
+                                <a href="#indicador">+ INFO</a>
                             </div>
                         </div>
                     </div>
@@ -236,7 +234,7 @@
                 
             </section>
 
-            <section class="elegirnos container">
+            <section class="elegirnos container" id="indicador">
                 <div class="elegirnos-title">
                     <h1>¿POR QUÉ DEBERÍA CONTRATAR A BEMARKING?</h1>
                 </div>
@@ -275,35 +273,33 @@
                         <div class="contact-form">
                             <h3>Contact Us</h3>
                             <form id="form1" action="https://formspree.io/f/mzbloadr" method="post">
-
                                 <p>
                                     <label for="fullname">Nombre completo</label>
-                                    <input type="text" name="fullname" id="fullname" placeholder="Ingrese su nombre">
-                                    
+                                    <input type="text" name="fullname" id="fullname" placeholder="Ingrese su nombre" >  
                                 </p>
                                 <p>
                                     <label>Correo electrónico</label>
-                                    <input type="email" name="email" placeholder="Ingrese su correo electrónico">
+                                    <input type="email" name="email" id="correo" placeholder="Ingrese su correo electrónico" >
                                 </p>
                                 <p>
                                     <label>Teléfono</label>
-                                    <input type="tel" name="phone" placeholder="Ingrese su número telefonico">
+                                    <input type="tel" name="phone" id="telefono" placeholder="Ingrese su número telefonico" >
                                 </p>
                                 <p>
                                     <label>Localidad</label>
-                                    <input type="text" name="affair" placeholder="Ingrese su localidad">
+                                    <input type="text" name="affair" id="localidad" placeholder="Ingrese su localidad" >
                                 </p>
                                 <p class="block">
                                     <label>Mensaje</label>
-                                    <textarea name="message" id="" rows="2" placeholder="Ingrese mensaje con su consulta"></textarea>
+                                    <textarea name="message" rows="2" placeholder="Ingrese mensaje con su consulta" ></textarea>
                                 </p>
                                 <p class="block">
-                                    <button type="submit">
+                                    <button type="submit" value="Enviar">
                                         Enviar
                                     </button>
-                                </p>  
-                                
+                                </p>
                             </form>
+                            <div id="error"></div>
                         </div>
 
                         <div class="contact-info">
@@ -318,7 +314,6 @@
                                 
                             </p>
                             <p>Bemarking.com</p>
-
                         </div>
                     </div>
                 </div>
@@ -391,19 +386,17 @@
                         
     
                     <div class="footer-icons">
-                        <a href="#"><i class="social__icon fa-brands fa-youtube"></i></a>
-                        <a href="#"><i class="social__icon fa-brands fa-linkedin"></i></a>
-                        <a href="#"><i class="social__icon fa-brands fa-instagram"></i></a>
-                        <a href="#"><i class="social__icon fa-brands fa-facebook"></i></a>
+                        <a href="https://www.youtube.com/channel/UCVrn4_qerPoYYTdeYkg2AsQ"><i class="social__icon fa-brands fa-youtube"></i></a>
+                        <a href="https://www.linkedin.com/in/nicolás-ferreiro-b3703a293/"><i class="social__icon fa-brands fa-linkedin"></i></a>
+                        <a href="https://www.instagram.com/nicoferreiro1/"><i class="social__icon fa-brands fa-instagram"></i></a>
+                        <a href="https://www.facebook.com/nicolas.ferreiro.79/"><i class="social__icon fa-brands fa-facebook"></i></a>
                     </div>
                 </div>
             </section>
 
         </footer>
 
-        <script type="module" src="JS/index.js">
-            
-        </script>
+        <script type="module" src="JS/index.js"></script>
     </body>
 </html>
 

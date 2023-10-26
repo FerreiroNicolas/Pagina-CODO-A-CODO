@@ -1,29 +1,41 @@
-const $form = document.querySelector('#form1');
+// VALIDACION FORMULARIO Y API PARA QUE MANDE EMAILS
 
-$form.addEventListener('submit', handleSubmit);
+document.addEventListener('DOMContentLoaded', function () {
+    const form = document.querySelector('#form1');
+    const errorDiv = document.querySelector('#error');
 
-async function handleSubmit(event) {
-    event.preventDefault();
+    form.addEventListener('submit', function (event) {
+        event.preventDefault();
 
-    const form = new FormData($form); 
+        const fullname = document.querySelector('#fullname').value;
+        const email = document.querySelector('#correo').value;
+        const phone = document.querySelector('#telefono').value;
+        const affair = document.querySelector('#localidad').value;
+        const message = document.querySelector('textarea[name="message"]').value;
 
-    try {
-        const response = await fetch($form.action, { 
-            method: $form.method, 
-            body: form,
-            headers: {
-                'Accept': 'application/json'
-            }
-        });
-
-        if (response.ok) {
-            $form.reset(); 
-            alert('Gracias por contactarnos, te escribiremos pronto');
+        if (fullname === '' || email === '' || phone === '' || affair === '' || message === '') {
+            errorDiv.textContent = 'Por favor, complete todos los campos obligatorios.';
         } else {
-
-    }
-    } catch (error) {
-        console.error(error);
-    }
-}
-
+            fetch(form.action, {
+                method: form.method,
+                body: new FormData(form),
+                headers: {
+                    'Accept': 'application/json'
+                }
+            })
+            .then(response => response.json())
+            .then(data => {
+                if (data.ok) {
+                    form.reset();
+                    alert('Gracias por contactarnos, te escribiremos pronto.');
+                } else {
+                    errorDiv.textContent = 'Hubo un problema al enviar el formulario. Inténtelo de nuevo más tarde.';
+                }
+            })
+            .catch(error => {
+                console.error(error);
+                errorDiv.textContent = 'Ocurrió un error inesperado. Por favor, inténtelo de nuevo más tarde.';
+            });
+        }
+    });
+});
