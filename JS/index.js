@@ -27,7 +27,11 @@ document.addEventListener('DOMContentLoaded', function () {
             .then(data => {
                 if (data.ok) {
                     form.reset();
-                    alert('Gracias por contactarnos, te escribiremos pronto.');
+                    swal.fire({
+                        title: 'Formulario enviado',
+                        text: 'Gracias por contactarnos, te escribiremos pronto.',
+                        icon: 'success'
+                    });
                 } else {
                     errorDiv.textContent = 'Hubo un problema al enviar el formulario. Inténtelo de nuevo más tarde.';
                 }
